@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backss"
+    android:orientation="vertical"
+    tools:context=".SignInActivity">
+
+    <ViewFlipper
+        android:id="@+id/v_flipper"
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+
+        />
+
+    <EditText
+        android:id="@+id/inputusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_flipper"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="12dp"
+        android:autofillHints="Email"
+        android:background="@drawable/et_bt"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="18dp"
+        android:textColorHint="#000"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/inputpasswordsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputusername"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:autofillHints="Password"
+        android:background="@drawable/et_bt"
+        android:drawableLeft="@drawable/ic_https_black_24dp"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:padding="18dp"
+        android:textColorHint="#000"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputpasswordsignin"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:text="Show Password"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_bg"
+        android:text="SignIn"
+        android:textAllCaps="false"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible" />
+
+
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnsignin"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_bg"
+        android:text="@string/SignUp"
+        android:textAllCaps="false"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

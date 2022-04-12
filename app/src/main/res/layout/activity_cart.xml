@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CartActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/bg_login">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="35dp"
+                android:id="@+id/image_back"
+                android:layout_height="32dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                app:tint="#000" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="CART"
+                android:layout_weight="1"
+                android:id="@+id/text_toolbar"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btn_place_order"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/Black"
+                android:text="  PLACE ORDER  "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/White"
+                android:layout_marginRight="10dp"
+                />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cart_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/text_total_amount"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="@drawable/bg_login"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

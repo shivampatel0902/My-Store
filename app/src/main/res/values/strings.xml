@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MYSTORE</string>
+    <string name="email">Email</string>
+    <string name="Password">Password</string>
+    <string name="SignUp">SignUp</string>
+    <string name="full_name">Fullname</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="ComformPasword">Confirm Password</string>
+    <string name="Register">Register</string>
+    <string name="signup">SignUp</string>
+    <string name="orderista">MYSTORE</string>
+    <string name="todo">TODO</string>
+</resources>

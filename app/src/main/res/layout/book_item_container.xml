@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:id="@+id/book_card_view"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:background="@drawable/bg_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:background="#BDBDBD"
+            android:id="@+id/image_book"
+            android:scaleType="fitXY"
+            android:layout_height="100dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/text_book_author"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_book_name"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/book_Price"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="22dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:id="@+id/text_description"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
